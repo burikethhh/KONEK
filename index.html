@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KONEK — Decentralized Emergency Response for the Philippines</title>
+  <meta name="description" content="KONEK is aLoRa mesh-based disaster response system enabling offline SOS alerts, real-time MDRRMO coordination, and multi-agency emergency management across the Philippines." />
+  <meta name="theme-color" content="#0b1120" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/konek-icon.png" />
+  <meta property="og:title" content="KONEK — Decentralized Emergency Response" />
+  <meta property="og:description" content="Offline-first disaster response mesh network for Philippine MDRRMOs" />
+  <meta property="og:image" content="/assets/konek-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="/assets/konek-icon.png" alt="KONEK" class="nav-logo-img" />
+        <span class="nav-logo-text">KONEK</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#download" class="nav-link">Download</a>
+        <a href="#for-mdrmmo" class="nav-link">For MDRRMO</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#download" class="nav-btn-outline">Download App</a>
+        <a href="#for-mdrmmo" class="nav-btn-primary">Open Dashboard</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#how-it-works" class="nav-mobile-link">How It Works</a>
+      <a href="#features" class="nav-mobile-link">Features</a>
+      <a href="#download" class="nav-mobile-link">Download</a>
+      <a href="#for-mdrmmo" class="nav-mobile-link">For MDRRMO</a>
+      <a href="#download" class="nav-mobile-btn">Download App</a>
+      <a href="#for-mdrmmo" class="nav-mobile-btn primary">Open Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-animate="fade-up">
+        <span class="hero-badge-dot"></span>
+        Offline-First Emergency Response
+      </div>
+      <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+        When All Networks Fail,<br /><span class="hero-accent">KONEK</span> Connects.
+      </h1>
+      <p class="hero-sub" data-animate="fade-up" data-delay="200">
+        A decentralized LoRa mesh network that lets citizens send SOS alerts
+        even without internet or cellular coverage. Built for Philippine MDRRMOs.
+      </p>
+      <div class="hero-ctas" data-animate="fade-up" data-delay="300">
+        <a href="#for-mdrmmo" class="btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          Open Dashboard
+        </a>
+        <a href="#download" class="btn-outline btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download APK
+        </a>
+      </div>
+      <div class="hero-stats" data-animate="fade-up" data-delay="400">
+        <div class="hero-stat">
+          <div class="hero-stat-value" id="statSos">0</div>
+          <div class="hero-stat-label">SOS Alerts Sent</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" id="statNodes">0</div>
+          <div class="hero-stat-label">Mesh Nodes Active</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" id="statMunicipalities">0</div>
+          <div class="hero-stat-label">Municipalities</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-animate="fade-up" data-delay="500">
+      <div class="hero-phone">
+        <div class="hero-phone-screen">
+          <div class="phone-header">
+            <div class="phone-signal">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="phone-time">9:41</span>
+            <div class="phone-battery"></div>
+          </div>
+          <div class="phone-logo-area">
+            <img src="/assets/konek-icon.png" alt="KONEK" class="phone-logo" />
+            <div class="phone-brand">KONEK</div>
+            <div class="phone-tagline">Emergency Response</div>
+          </div>
+          <div class="phone-sos-btn">
+            <div class="phone-sos-ring"></div>
+            <div class="phone-sos-inner">SOS</div>
+          </div>
+          <div class="phone-status">
+            <span class="phone-status-dot"></span>
+            Mesh Network Active
+          </div>
+          <div class="phone-cats">
+            <div class="phone-cat" style="--cat-color: #dc2626">
+              <div class="phone-cat-icon">M</div>
+              <div class="phone-cat-label">Medical</div>
+            </div>
+            <div class="phone-cat" style="--cat-color: #ea580c">
+              <div class="phone-cat-icon">F</div>
+              <div class="phone-cat-label">Fire</div>
+            </div>
+            <div class="phone-cat" style="--cat-color: #0284c7">
+              <div class="phone-cat-icon">FL</div>
+              <div class="phone-cat-label">Flood</div>
+            </div>
+            <div class="phone-cat" style="--cat-color: #d97706">
+              <div class="phone-cat-icon">R</div>
+              <div class="phone-cat-label">Rescue</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-badge">How It Works</div>
+        <h2 class="section-title">Three Steps to <span class="accent">Emergency Response</span></h2>
+        <p class="section-sub">From SOS to dispatch in seconds — even without internet</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-animate="fade-up" data-delay="100">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="step-title">Citizen Sends SOS</h3>
+          <p class="step-desc">Press the SOS button on the KONEK app or edge node. Fill in your emergency type, location, and details. Works offline via LoRa mesh.</p>
+          <div class="step-visual">
+            <div class="step-phone-mini">
+              <div class="step-sos-pulse"></div>
+              <div class="step-sos-text">SOS</div>
+            </div>
+          </div>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h36m-6-6l6 6-6 6" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="4 3"/></svg>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="200">
+          <div class="step-number">02</div>
+          <div class="step-icon mesh">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="step-title">LoRa Mesh Routes It</h3>
+          <p class="step-desc">The SOS packet hops through edge nodes and relay nodes across the mesh. Up to 5 hops, no internet required.</p>
+          <div class="step-visual">
+            <div class="step-mesh-mini">
+              <div class="step-node n1"></div>
+              <div class="step-node n2"></div>
+              <div class="step-node n3"></div>
+              <svg class="step-mesh-lines" viewBox="0 0 120 40">
+                <line x1="20" y1="20" x2="60" y2="8" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3" class="step-line" />
+                <line x1="60" y1="8" x2="100" y2="20" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 3" class="step-line delay" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="24" viewBox="0 0 40 24"><path d="M0 12h36m-6-6l6 6-6 6" stroke="#dc2626" stroke-width="2" fill="none" stroke-dasharray="4 3"/></svg>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="300">
+          <div class="step-number">03</div>
+          <div class="step-icon respond">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3 class="step-title">MDRRMO Responds</h3>
+          <p class="step-desc">The dashboard receives the alert in real-time. Operators acknowledge, dispatch responders, and coordinate multi-agency action.</p>
+          <div class="step-visual">
+            <div class="step-dashboard-mini">
+              <div class="step-alert-card">
+                <div class="step-alert-dot"></div>
+                <div>
+                  <div class="step-alert-title">MEDICAL - CRITICAL</div>
+                  <div class="step-alert-loc">Brgy. Camilmil, Bongabong</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-dark" id="features">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-badge">Features</div>
+        <h2 class="section-title">Everything for <span class="accent">Disaster Response</span></h2>
+        <p class="section-sub">A complete platform from citizen alert to multi-agency coordination</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-icon" style="--fi-color: #dc2626">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3 class="feature-title">Offline SOS</h3>
+          <p class="feature-desc">Send emergency alerts without internet or cellular. LoRa mesh ensures your call for help always gets through.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="50">
+          <div class="feature-icon" style="--fi-color: #3b82f6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="feature-title">Real-time Dashboard</h3>
+          <p class="feature-desc">Live map with GPS-tagged SOS markers, status tracking, and instant WebSocket updates for MDRRMO operators.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-icon" style="--fi-color: #10b981">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="feature-title">Multi-Agency</h3>
+          <p class="feature-desc">MDRRMO, BFP, PNP, RESCUE — each agency sees their assigned incidents with role-based access control.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="150">
+          <div class="feature-icon" style="--fi-color: #f59e0b">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          </div>
+          <h3 class="feature-title">Broadcast Alerts</h3>
+          <p class="feature-desc">Send emergency warnings to all app users instantly. Weather alerts, evacuation notices, and safety instructions.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-icon" style="--fi-color: #8b5cf6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="feature-title">Incident Reports</h3>
+          <p class="feature-desc">Community-submitted incident reports with photo evidence, GPS tagging, and verification workflow for operators.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="250">
+          <div class="feature-icon" style="--fi-color: #06b6d4">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-4V6"/><path d="M14 10l7.39-7.39A2 2 0 0121 4v16a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2h6l4 4z"/></svg>
+          </div>
+          <h3 class="feature-title">Environmental Monitoring</h3>
+          <p class="feature-desc">Real-time weather, seismic activity, air quality, fault lines, and tropical cyclone tracking for proactive response.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="300">
+          <div class="feature-icon" style="--fi-color: #ec4899">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="feature-title">Captive Portal</h3>
+          <p class="feature-desc">Edge nodes create a WiFi hotspot with auto-opening SOS form. No app needed — just connect and submit.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="350">
+          <div class="feature-icon" style="--fi-color: #14b8a6">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="feature-title">Resilient Mesh</h3>
+          <p class="feature-desc">Self-healing network with relay nodes extending coverage. Packets auto-route around failures across the mesh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOWNLOAD ============ -->
+  <section class="section" id="download">
+    <div class="container">
+      <div class="download-layout">
+        <div class="download-info" data-animate="fade-up">
+          <div class="section-badge">Download</div>
+          <h2 class="section-title">Get the <span class="accent">KONEK App</span></h2>
+          <p class="section-sub" style="text-align: left; max-width: 480px;">
+            Available for Android. Send SOS alerts, report incidents, and stay connected
+            to your local emergency network — even without internet.
+          </p>
+          <div class="download-features">
+            <div class="download-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Offline SOS via LoRa mesh</span>
+            </div>
+            <div class="download-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Real-time weather & seismic monitoring</span>
+            </div>
+            <div class="download-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Incident reporting with photo proof</span>
+            </div>
+            <div class="download-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Emergency broadcasts from MDRRMO</span>
+            </div>
+            <div class="download-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Works on Android 6.0+</span>
+            </div>
+          </div>
+          <div class="download-actions">
+            <a href="#" class="btn-primary btn-lg download-apk-btn" id="downloadBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span id="downloadBtnText">Download APK</span>
+            </a>
+            <div class="download-version" id="downloadVersion">Latest release</div>
+          </div>
+        </div>
+        <div class="download-visual" data-animate="fade-up" data-delay="200">
+          <div class="download-phone">
+            <div class="download-phone-screen">
+              <div class="dl-screen-header">
+                <img src="/assets/konek-icon.png" alt="KONEK" class="dl-screen-logo" />
+                <div>
+                  <div class="dl-screen-title">KONEK</div>
+                  <div class="dl-screen-sub">Emergency Response App</div>
+                </div>
+              </div>
+              <div class="dl-screen-map">
+                <div class="dl-map-pin"></div>
+                <div class="dl-map-pin p2"></div>
+                <div class="dl-map-pin p3"></div>
+                <div class="dl-map-grid"></div>
+              </div>
+              <div class="dl-screen-alert">
+                <div class="dl-alert-dot"></div>
+                <div>
+                  <div class="dl-alert-title">SOS Received</div>
+                  <div class="dl-alert-text">Medical Emergency - Brgy. Camilmil</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOR MDRRMO ============ -->
+  <section class="section section-dark" id="for-mdrmmo">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-badge">For MDRRMO Teams</div>
+        <h2 class="section-title">Deploy KONEK in <span class="accent">Your Municipality</span></h2>
+        <p class="section-sub">A complete emergency response system ready for your local disaster risk reduction office</p>
+      </div>
+      <div class="mdrrmo-grid">
+        <div class="mdrrmo-card" data-animate="fade-up" data-delay="0">
+          <div class="mdrrmo-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="mdrrmo-card-title">Operations Dashboard</h3>
+          <p class="mdrrmo-card-desc">Real-time map view of all SOS alerts, incident reports, and mesh network status. Acknowledge, dispatch, and resolve emergencies from one screen.</p>
+          <a href="#for-mdrmmo" class="mdrrmo-card-link dashboard-link" id="dashboardLink">
+            Open Dashboard
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+        <div class="mdrrmo-card" data-animate="fade-up" data-delay="100">
+          <div class="mdrrmo-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="mdrrmo-card-title">Multi-Agency Access</h3>
+          <p class="mdrrmo-card-desc">Each agency (MDRRMO, BFP, PNP, RESCUE) gets their own operator accounts with role-based filtering. Everyone sees what they need.</p>
+          <div class="mdrrmo-card-agencies">
+            <span class="agency-tag mdrrmo">MDRRMO</span>
+            <span class="agency-tag bfp">BFP</span>
+            <span class="agency-tag pnp">PNP</span>
+            <span class="agency-tag rescue">RESCUE</span>
+          </div>
+        </div>
+        <div class="mdrrmo-card" data-animate="fade-up" data-delay="200">
+          <div class="mdrrmo-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="mdrrmo-card-title">No Internet Required</h3>
+          <p class="mdrrmo-card-desc">The LoRa mesh network operates independently of cellular and internet infrastructure. Works during typhoons, earthquakes, and power outages.</p>
+          <div class="mdrrmo-card-specs">
+            <div class="spec">
+              <span class="spec-value">915 MHz</span>
+              <span class="spec-label">LoRa Frequency</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">5 hops</span>
+              <span class="spec-label">Max Range</span>
+            </div>
+            <div class="spec">
+              <span class="spec-value">3 tiers</span>
+              <span class="spec-label">Mesh Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdrrmo-cta" data-animate="fade-up">
+        <p class="mdrrmo-cta-text">Ready to deploy KONEK in your municipality?</p>
+        <a href="mailto:konek@konek.ph" class="btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="/assets/konek-icon.png" alt="KONEK" class="footer-logo" />
+          <div>
+            <div class="footer-name">KONEK</div>
+            <div class="footer-tagline">Decentralized Emergency Response Network</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#download">Download</a>
+          <a href="#for-mdrmmo">Dashboard</a>
+        </div>
+        <div class="footer-bottom">
+          <span>Built for Philippine MDRRMOs</span>
+          <span class="footer-sep">|</span>
+          <span>KONEK &copy; 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
