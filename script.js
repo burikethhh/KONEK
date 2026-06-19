@@ -3,7 +3,7 @@
 // ============================================================
 
 const DASHBOARD_URL = 'https://konek-mdrrmo.azurewebsites.net';
-const GITHUB_REPO = 'your-org/ProjectKONEK'; // Update with actual repo
+const GITHUB_REPO = 'burikethhh/KONEK';
 
 // ============================================================
 // Navbar scroll effect
@@ -76,6 +76,11 @@ animateElements.forEach(el => observer.observe(el));
 async function fetchLatestRelease() {
   try {
     const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`);
+    if (res.status === 404) {
+      const version = document.getElementById('downloadVersion');
+      if (version) version.textContent = 'No release yet • Check back soon';
+      return;
+    }
     if (!res.ok) return;
     const data = await res.json();
 
@@ -117,39 +122,6 @@ document.querySelectorAll('.nav-btn-primary, .nav-mobile-btn.primary').forEach(e
     el.rel = 'noopener noreferrer';
   }
 });
-
-// ============================================================
-// Hero stats — animate counters (simulated for landing)
-// ============================================================
-function animateCounter(el, target, duration = 2000) {
-  const start = 0;
-  const startTime = performance.now();
-
-  function update(now) {
-    const elapsed = now - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = Math.floor(start + (target - start) * eased);
-    el.textContent = current.toLocaleString();
-    if (progress < 1) requestAnimationFrame(update);
-  }
-  requestAnimationFrame(update);
-}
-
-// Animate when hero stats come into view
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter(document.getElementById('statSos'), 1247, 2000);
-      animateCounter(document.getElementById('statNodes'), 42, 1500);
-      animateCounter(document.getElementById('statMunicipalities'), 3, 1000);
-      statsObserver.disconnect();
-    }
-  });
-}, { threshold: 0.5 });
-
-const statsSection = document.querySelector('.hero-stats');
-if (statsSection) statsObserver.observe(statsSection);
 
 // ============================================================
 // Phone SOS button interaction (cosmetic)
