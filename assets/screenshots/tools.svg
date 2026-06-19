@@ -34,18 +34,35 @@
 
   <!-- Tab Pills -->
   <rect x="16" y="88" width="52" height="28" rx="14" fill="url(#redGrad)"/>
-  <text x="26" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="600" fill="white">&#128203; Guide</text>
+  <!-- Book icon -->
+  <rect x="24" y="96" width="8" height="12" rx="1" stroke="white" stroke-width="1.2" fill="none"/>
+  <line x1="28" y1="96" x2="28" y2="108" stroke="white" stroke-width="1"/>
+  <text x="36" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="600" fill="white">Guide</text>
+
   <rect x="76" y="88" width="68" height="28" rx="14" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="0.5"/>
-  <text x="86" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#6B7280">&#129517; Compass</text>
+  <!-- Compass icon -->
+  <circle cx="92" cy="102" r="5" stroke="#6B7280" stroke-width="1.2" fill="none"/>
+  <polygon points="92,97 94,102 92,107 90,102" fill="#6B7280"/>
+  <text x="100" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#6B7280">Compass</text>
+
   <rect x="152" y="88" width="56" height="28" rx="14" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="0.5"/>
-  <text x="162" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#6B7280">&#128161; Strobe</text>
+  <!-- Light icon -->
+  <path d="M168 96 L168 98 M168 106 L168 108 M162 102 L164 102 M172 102 L174 102" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="168" cy="102" r="4" stroke="#6B7280" stroke-width="1.2" fill="none"/>
+  <text x="176" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#6B7280">Strobe</text>
+
   <rect x="216" y="88" width="64" height="28" rx="14" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="0.5"/>
-  <text x="224" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#6B7280">&#128222; Hotlines</text>
+  <!-- Phone icon -->
+  <rect x="228" y="96" width="8" height="12" rx="2" stroke="#6B7280" stroke-width="1.2" fill="none"/>
+  <line x1="230" y1="106" x2="234" y2="106" stroke="#6B7280" stroke-width="1" stroke-linecap="round"/>
+  <text x="240" y="106" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#6B7280">Hotlines</text>
 
   <!-- Welcome Icon -->
   <circle cx="160" cy="160" r="32" fill="#FEE2E2"/>
   <circle cx="160" cy="160" r="24" fill="#FECACA"/>
-  <text x="148" y="168" font-family="Inter,system-ui,sans-serif" font-size="24" fill="#DC2626">&#128214;</text>
+  <!-- Shield with K icon -->
+  <path d="M160 146 L172 152 L172 164 Q172 172 160 176 Q148 172 148 164 L148 152 Z" stroke="#DC2626" stroke-width="2" fill="none"/>
+  <text x="155" y="168" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="800" fill="#DC2626">K</text>
 
   <!-- Welcome Text -->
   <text x="160" y="210" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="700" fill="#1a1a1a" text-anchor="middle">Welcome to KONEK</text>
@@ -55,60 +72,85 @@
   <g class="tool-row">
     <rect x="16" y="252" width="288" height="44" rx="12" fill="#FEF2F2" stroke="#FECACA" stroke-width="0.5"/>
     <circle cx="36" cy="274" r="12" fill="#FEE2E2"/>
-    <text x="31" y="279" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#DC2626">&#10060;</text>
+    <!-- SOS icon -->
+    <circle cx="36" cy="274" r="6" stroke="#DC2626" stroke-width="1.5" fill="none"/>
+    <text x="33" y="278" font-family="Inter,system-ui,sans-serif" font-size="8" font-weight="800" fill="#DC2626">!</text>
     <text x="56" y="278" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#374151">Emergency SOS</text>
-    <text x="280" y="278" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#9CA3AF" class="chevron">&#9656;</text>
+    <!-- Chevron -->
+    <path d="M278 274 L284 278 L278 282" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="chevron"/>
   </g>
 
   <g class="tool-row">
     <rect x="16" y="304" width="288" height="44" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="0.5"/>
     <circle cx="36" cy="326" r="12" fill="#DBEAFE"/>
-    <text x="31" y="331" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#3B82F6">&#128506;</text>
+    <!-- Map pin icon -->
+    <path d="M36 318 L36 326 Q36 332 36 326 L36 318Z" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
+    <circle cx="36" cy="320" r="3" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
     <text x="56" y="330" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#374151">Interactive Map</text>
-    <text x="280" y="330" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#9CA3AF" class="chevron">&#9656;</text>
+    <path d="M278 326 L284 330 L278 334" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="chevron"/>
   </g>
 
   <g class="tool-row">
     <rect x="16" y="356" width="288" height="44" rx="12" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.5"/>
     <circle cx="36" cy="378" r="12" fill="#D1FAE5"/>
-    <text x="31" y="383" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#10B981">&#128225;</text>
+    <!-- Signal icon -->
+    <path d="M28 382 L30 378 L32 382" stroke="#10B981" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M32 382 L34 374 L36 382" stroke="#10B981" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M36 382 L38 370 L40 382" stroke="#10B981" stroke-width="1.5" fill="none" stroke-linecap="round"/>
     <text x="56" y="382" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#374151">Real-time Monitoring</text>
-    <text x="280" y="382" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#9CA3AF" class="chevron">&#9656;</text>
+    <path d="M278 378 L284 382 L278 386" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="chevron"/>
   </g>
 
   <g class="tool-row">
     <rect x="16" y="408" width="288" height="44" rx="12" fill="#FFF7ED" stroke="#FED7AA" stroke-width="0.5"/>
     <circle cx="36" cy="430" r="12" fill="#FFEDD5"/>
-    <text x="31" y="435" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#EA580C">&#128225;</text>
+    <!-- Network/mesh icon -->
+    <circle cx="32" cy="426" r="3" fill="#EA580C"/>
+    <circle cx="40" cy="426" r="3" fill="#EA580C"/>
+    <circle cx="36" cy="434" r="3" fill="#EA580C"/>
+    <line x1="32" y1="426" x2="40" y2="426" stroke="#EA580C" stroke-width="1"/>
+    <line x1="32" y1="426" x2="36" y2="434" stroke="#EA580C" stroke-width="1"/>
+    <line x1="40" y1="426" x2="36" y2="434" stroke="#EA580C" stroke-width="1"/>
     <text x="56" y="434" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#374151">Mesh Network</text>
-    <text x="280" y="434" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#9CA3AF" class="chevron">&#9656;</text>
+    <path d="M278 430 L284 434 L278 438" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="chevron"/>
   </g>
 
   <g class="tool-row">
     <rect x="16" y="460" width="288" height="44" rx="12" fill="#FDF2F8" stroke="#FBCFE8" stroke-width="0.5"/>
     <circle cx="36" cy="482" r="12" fill="#FCE7F3"/>
-    <text x="31" y="487" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#DB2777">&#128295;</text>
+    <!-- Wrench icon -->
+    <path d="M30 476 Q28 478 28 482 Q28 486 30 488 L34 492 L38 488 L34 484 Q36 482 36 478 Q36 474 34 472 L30 476Z" stroke="#DB2777" stroke-width="1.5" fill="none"/>
     <text x="56" y="486" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#374151">Emergency Tools</text>
-    <text x="280" y="486" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#9CA3AF" class="chevron">&#9656;</text>
+    <path d="M278 482 L284 486 L278 490" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="chevron"/>
   </g>
 
   <g class="tool-row">
     <rect x="16" y="512" width="288" height="44" rx="12" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.5"/>
     <circle cx="36" cy="534" r="12" fill="#FEF3C7"/>
-    <text x="31" y="539" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#D97706">&#9888;</text>
+    <!-- Warning triangle icon -->
+    <path d="M36 524 L44 538 L28 538 Z" stroke="#D97706" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+    <line x1="36" y1="528" x2="36" y2="533" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="36" cy="536" r="0.8" fill="#D97706"/>
     <text x="56" y="538" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600" fill="#374151">Incident Reporting</text>
-    <text x="280" y="538" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#9CA3AF" class="chevron">&#9656;</text>
+    <path d="M278 534 L284 538 L278 542" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="chevron"/>
   </g>
 
-  <!-- Get Started Button (behind nav) -->
   <!-- Bottom Nav -->
   <rect x="0" y="540" width="320" height="40" fill="white" stroke="#f0f0f0" stroke-width="0.5"/>
-  <text x="40" y="565" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#86868b">&#8962;</text>
-  <text x="100" y="565" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#86868b">&#9783;</text>
-  <text x="150" y="565" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#86868b">&#9878;</text>
+  <!-- Home icon -->
+  <path d="M36 556 L36 566 L46 566 L46 560 L52 560 L52 566 L62 566 L62 556 L49 548 L36 556Z" fill="#86868b"/>
+  <!-- Map icon -->
+  <path d="M96 556 L96 566 L106 562 L116 566 L116 556 L106 552 L96 556Z" fill="#86868b"/>
+  <!-- Alert icon -->
+  <path d="M146 554 L146 560 Q146 564 152 566 Q158 564 158 560 L158 554 L146 554Z" stroke="#86868b" stroke-width="1.5" fill="none"/>
   <g class="nav-active">
     <rect x="180" y="544" width="60" height="32" rx="16" fill="url(#redGrad)"/>
-    <text x="190" y="565" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="600" fill="white">&#9881; Tools</text>
+    <!-- Wrench icon in nav -->
+    <path d="M196 554 Q194 556 194 560 Q194 564 196 566 L198 568 L200 566 L198 562 Q200 560 200 556 Q200 552 198 550 L196 554Z" stroke="white" stroke-width="1.2" fill="none"/>
+    <text x="204" y="565" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="600" fill="white">Tools</text>
   </g>
-  <text x="268" y="565" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#86868b">&#9201;</text>
+  <!-- Clock icon -->
+  <circle cx="268" cy="560" r="6" stroke="#86868b" stroke-width="1.5" fill="none"/>
+  <line x1="268" y1="556" x2="268" y2="560" stroke="#86868b" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="268" y1="560" x2="271" y2="562" stroke="#86868b" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
